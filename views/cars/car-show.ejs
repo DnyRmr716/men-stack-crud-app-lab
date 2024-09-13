@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= car.name %></title>
+  </head>
+  <body>
+    <h1><%= car.name %></h1>
+    <p>Brand: <%= car.brand %></p>
+    <p>Year: <%= car.year %></p>
+    <p>Is Electric: <%= car.isElectric ? 'Yes' : 'No' %></p>
+
+    <a href="/car/<%= car._id %>/edit">Edit</a> | 
+    <a href="/car">Back to Car List</a>
+  </body>
+</html>
